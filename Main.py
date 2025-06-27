@@ -1,6 +1,8 @@
+# Libraries
 import random
 import os
 
+# Code
 os.system("cls")
 
 print('''
@@ -14,11 +16,16 @@ Rules:
     5. The hangman figure consists of 10 parts (Means 10 tries).     
     ''')
 
+#Here we have some basic rules
+
 input("Press Enter To Continue... ")
 
+#This Game() is the main part.
 
 def Game():
     global tries
+
+    #We are using pre defined list of objects
     lst = [
         "apple",
         "banana",
@@ -311,3 +318,7 @@ def Game():
     base()
 
 Game()
+
+# Name : Harsh Khandal
+# Email : codingwithme7@gmail.com
+# Created on 15 June 2025
