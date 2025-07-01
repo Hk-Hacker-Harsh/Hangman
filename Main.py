@@ -2,8 +2,15 @@
 import random
 import os
 
+#def
+def clear():
+    if os.name=="nt":
+        os.system("cls")
+    else:
+        os.system("clear")
+
 # Code
-os.system("cls")
+clear()
 
 print('''
 HANGMAN GAME (By Harsh Khandal)  
@@ -111,7 +118,7 @@ def Game():
 
     word = random.choice(lst)
 
-    os.system("cls")
+    clear()
 
     print("HANGMAN GAME (By Harsh Khandal)")
     print('''
@@ -141,7 +148,7 @@ def Game():
         if ch in word:
             for i in range(len(word)):
                 if word[i]==ch:
-                    #os.system("cls")
+                    #clear()
                     dash[i]=ch
             print("        ",' '.join(dash))
 
@@ -164,7 +171,7 @@ def Game():
 
     def fig():              
         if tries == 10:
-            os.system("cls")
+            clear()
             print('''
                       ______
                      |      
@@ -177,7 +184,7 @@ def Game():
             base()
         
         elif tries == 9:
-            os.system("cls")
+            clear()
             print('''
                       ______
                      |      |
@@ -190,7 +197,7 @@ def Game():
             base()
         
         elif tries == 8:
-            os.system("cls")
+            clear()
             print('''
                       ______
                      |      |
@@ -203,7 +210,7 @@ def Game():
             base()
         
         elif tries == 7:
-            os.system("cls")
+            clear()
             print('''
                       ______
                      |      |
@@ -216,7 +223,7 @@ def Game():
             base()
         
         elif tries == 6:
-            os.system("cls")
+            clear()
             print('''
                       ______
                      |      |
@@ -229,7 +236,7 @@ def Game():
             base()
 
         elif tries == 5:
-            os.system("cls")
+            clear()
             print('''
                       ______
                      |      |
@@ -242,7 +249,7 @@ def Game():
             base()
 
         elif tries == 4:
-            os.system("cls")
+            clear()
             print('''
                       ______
                      |      |
@@ -255,7 +262,7 @@ def Game():
             base()
 
         elif tries == 3:
-            os.system("cls")
+            clear()
             print('''
                       ______
                      |      |
@@ -268,7 +275,7 @@ def Game():
             base()
 
         elif tries == 2:
-            os.system("cls")
+            clear()
             print('''
                       ______
                      |      |
@@ -281,7 +288,7 @@ def Game():
             base()
 
         elif tries == 1:
-            os.system("cls")
+            clear()
             print('''
                       ______
                      |      |
@@ -294,7 +301,7 @@ def Game():
             base()
 
         elif tries == 0:
-            os.system("cls")
+            clear()
             print('''
                       ______
                      |      |
